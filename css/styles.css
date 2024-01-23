@@ -56,8 +56,8 @@ header {
     background-color: var(--main-white);
     position: absolute;
     width: 360px;
-    height: 225px;
-    top: 225px;
+    height: 300px;
+    top: 200px;
     left: 200px;
     box-shadow: -8px 8px 0 0 rgba(40, 40, 40, 1);
 }
@@ -82,6 +82,7 @@ header {
     color: var(--main-white);
     text-align: center;
     margin: 20px 0 20px 0;
+    transition: background 0.3s ease-out;
 }
 
 .recipe-title-box ul li:nth-of-type(2):hover {
@@ -92,7 +93,39 @@ header {
 .recipe-title-box ul li:nth-of-type(3) {
     font-family: 'Domine', serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    line-height: 1.6rem;
+}
+
+.recipe-title-box ul li:nth-of-type(4) {
+    max-width: 105px;
+}
+
+.recipe-title-box ul li:nth-of-type(4)::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--main-gray);
+    transition: width .3s;
+}
+
+.recipe-title-box ul li:nth-of-type(4):hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.recipe-title-box a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.hero-arrow {
+    position: absolute;
+    left: 120px;
+    top: 247px;
 }
 
 .hero-img {
