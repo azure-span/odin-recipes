@@ -1,0 +1,49 @@
+/* DEFAULT RESET */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* DEFAULT RESET */
+
+/* ROOT VARIABLES */
+:root {
+    --main-white: #fff;
+}
+
+html {
+    background-color: var(--main-white);
+}
+
+/* NAV & HERO */
+
+header {
+    position: fixed;
+    height: 8vh;
+    background-color: var(--main-white);
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.nav-items li {
+    padding-left: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* NAV & HERO */
