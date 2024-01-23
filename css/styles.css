@@ -100,6 +100,7 @@ header {
 
 .recipe-title-box ul li:nth-of-type(4) {
     max-width: 105px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .recipe-title-box ul li:nth-of-type(4)::after {
@@ -124,8 +125,9 @@ header {
 
 .hero-arrow {
     position: absolute;
-    left: 120px;
+    left: 118px;
     top: 247px;
+    width: 15px;
 }
 
 .hero-img {
@@ -135,3 +137,20 @@ header {
     object-position: 50% 75%;
 }
 /* END NAV & HERO */
+
+/*BEGIN RECIPE GRID */
+
+.recipe-grid {
+    display: flex;
+    padding: 50px;
+}
+
+.recipe-tile {
+    max-width: calc(100% / 3);
+    object-fit: cover;
+    height: 500px;
+}
+
+.recipe-grid-title {
+    position: absolute;
+}
