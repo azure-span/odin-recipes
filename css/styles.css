@@ -16,6 +16,7 @@
 
 html {
     background-color: var(--main-white);
+    overflow: hidden;
 }
 
 /* NAV & HERO */
@@ -143,14 +144,17 @@ header {
 .recipe-grid {
     display: flex;
     padding: 50px;
+    justify-content: center;
+    gap: 30px;
 }
 
-.recipe-tile {
-    max-width: calc(100% / 3);
-    object-fit: cover;
-    height: 500px;
+.recipes {
+    margin-top: 60px;
 }
 
-.recipe-grid-title {
-    position: absolute;
+.section-header {
+    text-align: center;
+    font-family: 'Domine', serif;
+    font-weight: 700;
+    font-size: 2rem;
 }
