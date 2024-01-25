@@ -11,18 +11,25 @@
     --main-white: #fff;
     --main-gray: #282828;
     --tag-color: #e7c05b;
+    --tag-color-green: #4e7b6c;
 }
 /* END ROOT VARIABLES */
 
 html {
     background-color: var(--main-white);
-    overflow: hidden;
 }
 
-/* NAV & HERO */
-header {
+/* ==========================
+MAIN HEADER ELEMENT STYLES
+=========================== */
+
+/* NAV */
+.nav {
     height: 8vh;
     background-color: var(--main-white);
+    width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 .navbar {
@@ -32,7 +39,11 @@ header {
 }
 
 .logo {
-    padding: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .nav-items {
@@ -40,15 +51,17 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
 }
 
 .nav-items li {
-    padding-left: 50px;
+    padding: 50px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
 
+/* END NAV */
+
+/* BEGIN HOMEPAGE HERO */
 .hero a {
     color: var(--main-gray);
 }
@@ -137,9 +150,13 @@ header {
     object-fit: cover;
     object-position: 50% 75%;
 }
-/* END NAV & HERO */
+/* END HOMEPAGE HERO */
 
-/*BEGIN RECIPE GRID */
+/* ==============
+BODY STYLES
+================= */
+
+/*BEGIN HOMEPAGE RECIPE GRID */
 
 .recipe-grid {
     display: flex;
@@ -157,4 +174,38 @@ header {
     font-family: 'Domine', serif;
     font-weight: 700;
     font-size: 2rem;
+}
+
+/* END HOMEPAGE RECIPE GRID */
+
+/* =====================
+BEGIN RECIPE PAGE STYLES
+======================= */
+
+.recipe-header {
+    margin-top: 100px;
+}
+
+.recipe-header header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.category-tags {
+    padding: 20px;
+}
+
+.category-tags p {
+    color: var(--main-white);
+    background-color: var(--tag-color-green);
+    padding: 10px;
 }
