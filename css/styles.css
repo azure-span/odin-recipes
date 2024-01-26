@@ -222,6 +222,7 @@ BEGIN RECIPE PAGE STYLES
 
 .recipe-hero-img {
     margin-top: 40px;
+    object-fit: cover;
 }
 
 figcaption {
