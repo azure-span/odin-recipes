@@ -62,7 +62,7 @@
         </section>
         <!--END HEADER-->
         
-        <!--BEGIN INGREDIENTS SECTION-->
+        <!--BEGIN RECIPE SECTION-->
         <section class="recipe">
             <div class="recipe-main-container">
                 <div class="recipe-inner-container">
@@ -93,7 +93,33 @@
                 </div>
             </div>
         </section>
-        <!--END STEPS SECTION-->
+        <!--END RECIPE SECTION-->
+        
+        <!--BEGIN FORM-->
+            <section class="comment-form-section">
+                <hr>
+                <h3>Leave a Reply</h3>
+                <form class="comment-form" action="">
+                    <p>Required fields are marked *</p>
+                    <textarea id="comment" name="comment" maxlength="2000" required></textarea>
+                    <label for="author">Name *</label>
+                    <br />
+                    <input id="author" name="author" type="text" placeholder="Enter your name" required>
+                    <br />
+                    <label for="email">Email *</label>
+                    <br />
+                    <input id="email" type="email" name="email" placeholder="Enter your email" required>
+                    <br />
+                    <label for="notify">
+                        <br />
+                        <input id="notify" name="notify" type="checkbox" value="on" checked="">
+                        Notify me via e-mail if anyone answers my comment.
+                    </label>
+                    <br />
+                    <input id="submit" class="submit" name="submit" type="submit" value="Post Comment">
+                </form>
+            </section>
+        <!--END FORM-->
     </body>
 <!--END BODY-->
 </html>
