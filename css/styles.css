@@ -24,18 +24,15 @@ MAIN HEADER ELEMENT STYLES
 =========================== */
 
 /* NAV */
-.nav {
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 8vh;
     background-color: var(--main-white);
     width: 100%;
     position: fixed;
     top: 0;
-}
-
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .logo {
@@ -174,6 +171,7 @@ BODY STYLES
     font-family: 'Domine', serif;
     font-weight: 700;
     font-size: 2rem;
+    padding-bottom: 20px;
 }
 
 /* END HOMEPAGE RECIPE GRID */
@@ -182,11 +180,13 @@ BODY STYLES
 BEGIN RECIPE PAGE STYLES
 ======================= */
 
+/* HEADER STYLES */
+
 .recipe-header {
     margin-top: 100px;
 }
 
-.recipe-header header {
+.recipe-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -198,14 +198,38 @@ BEGIN RECIPE PAGE STYLES
     justify-content: center;
     align-items: center;
     list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 .category-tags {
-    padding: 20px;
+    padding: 20px 5px 45px 5px;
 }
 
 .category-tags p {
     color: var(--main-white);
     background-color: var(--tag-color-green);
     padding: 10px;
+}
+
+.byline {
+    font-family: 'Domine', serif;
+    font-weight: 400;
+}
+
+.star-ratings {
+    padding-top: 10px;
+}
+
+.recipe-hero-img {
+    margin-top: 40px;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Domine', serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+    font-style: italic;
 }
